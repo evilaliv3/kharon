@@ -1,0 +1,6 @@
+# Kharon is a small Greasemonkey script to rewrite some darknet links to a proxyfied version.
+
+Actually it offers a doorway to the following darknets:
+
+ - Tor, throught tor2web.org;
+ - I2P, throught i2p.to.
