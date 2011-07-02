@@ -29,7 +29,7 @@
     function() {
 
         var tor = new Array();
-        tor['regexp']    = /^((.*)(:\/\/)(.*)).onion((\/.*)?)$/i;
+        tor['regexp']    = /^((.*)(:\/\/)([a-zA-Z0-9]{16})).onion((\/.*)?)$/i;
         tor['rewrite']   = "matches[1] + \".tor2web.org\" + matches[5]";
         
         var i2p = new Array();
