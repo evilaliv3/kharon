@@ -1,6 +1,50 @@
-# Kharon is a small Greasemonkey script to rewrite some darknet links to a proxyfied version.
+# Kharon is a small Greasemonkey/HTML5 script that rewrite some darknet links to a proxyfied version.
 
-Actually it offers a doorway to the following darknets:
+This action is performed to permit access to the darknet also in situations where the direct connection it's not available.
+
+# Kharons's actually offered doorways
+
+Actually Kharon offers a doorway to the following darknets:
 
  - Tor, throught tor2web.org;
  - I2P, throught i2p.to.
+
+# How it works
+
+Kharon periodically checks the access to the darknets and performs the following actions:
+
+  - the darknet it's available?
+      => it assures that no proxified link versions are used performing a rewrite to direct links.
+
+  - the darknet it's not available?
+      => it replaces direct links to the darknet with a proxified version.
+
+# How checks are implemented ?
+
+Due the the "same origin policy" a real realiable check can't be fulfilled.
+Actually we are testing the same hack used in javascript portscanning technique (SPI Dynamics / gnucityzen).
+
+# GPG public keys
+
+$ gpg --keyserver pgp.mit.edu --recv-key D9A950DE
+$ gpg --fingerprint --list-keys D9A950DE
+pub   1024D/D9A950DE 2009-05-10 [expires: 2014-05-09]
+      Key fingerprint = C1ED 5C8F DB6A 1C74 A807  5695 91EC 9BB8 D9A9 50DE
+uid                  Giovanni Pellerano <giovanni.pellerano@evilaliv3.org>
+sub   4096g/50A7F150 2009-05-10 [expires: 2014-05-09]
+
+$ gpg --keyserver pgp.mit.edu --recv-key A22F60B3
+$ gpg --fingerprint --list-keys A22F60B3
+pub   4096R/A22F60B3 2010-07-14 [expires: 2011-07-14]
+      Key fingerprint = CA6D 2EDE D7F6 0928 4326  AF8C 3415 CDAE A22F 60B3
+uid                  Arturo <hellais@gmail.com>
+uid                  Arturo Filastò Buzzolan <art@baculo.org>
+sub   4096R/D91E70E0 2010-07-14 [expires: 2011-07-14]
+
+$ gpg --keyserver pgp.mit.edu --recv-key C6765430
+$ gpg --fingerprint --list-keys C6765430
+pub   1024D/C6765430 2009-08-25 [expires: 2011-08-25]
+      Key fingerprint = 341F 1A8C E2B4 F4F4 174D  7C21 B842 093D C676 5430
+uid                  vecna <vecna@s0ftpj.org>
+uid                  vecna <vecna@delirandom.net>
+sub   3072g/E8157737 2009-08-25 [expires: 2011-08-25]
