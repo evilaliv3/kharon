@@ -1,4 +1,4 @@
-# Kharon is a small Greasemonkey/HTML5 script that rewrite some darknet links to a proxyfied version.
+# Kharon is a small Greasemonkey/HTML5 script that rewrites some darknet links to a proxified version.
 
 This action is performed to permit access to the darknet also in situations where the direct connection it's not available.
 
