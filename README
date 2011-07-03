@@ -2,14 +2,14 @@
 
 This action is performed to permit access to the darknet also in situations where the direct connection it's not available.
 
-# Kharons's actually offered doorways
+# Kharon's actually offered doorways
 
 Actually Kharon offers a doorway to the following darknets:
 
  - Tor, throught tor2web.org;
  - I2P, throught i2p.to.
 
-# How it works
+# How it works ?
 
 Kharon periodically checks the access to the darknets and performs the following actions:
 
